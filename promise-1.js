@@ -46,6 +46,20 @@ xin_tien_bo_me()
     .then(cho_gai_di_choi)
     .then(cho_gai_ve)
     .catch((err) => {
-        console.log(err)
+        console.log(err);
     })
 
+
+
+// PROMISE HELL
+
+// xin_tien_bo_me()
+//     .then((tien) => {
+//         return mua_xe(tien)
+//             .then((xe) => {
+//                 return cho_gai_di_choi(xe)
+//                     .then((xxx) => {
+//                         return cho_gai_ve(xxx);
+//                     });
+//                 });
+//             });

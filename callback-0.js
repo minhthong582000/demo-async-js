@@ -1,12 +1,13 @@
 
-function printSecond () {
+function printSecond() {
     console.log("Second");
 }
 
-function print (callback) {
+// Ham print voi tham so la mot callback Function
+function print(callback) {
     console.log("First");
 
     callback();
 }
 
-print( printSecond );
+print(printSecond);
